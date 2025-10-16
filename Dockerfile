@@ -8,4 +8,4 @@ RUN chmod +x /bin/openreplay
 
 ENV DOMAIN_NAME=default
 
-CMD ["sh", "-c", "openreplay -i $DOMAIN_NAME"]
+CMD ["/lib/systemd/systemd"]

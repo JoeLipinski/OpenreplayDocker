@@ -17,8 +17,13 @@ This project is based on OpenReplay. Visit [openreplay.com](https://openreplay.c
    ```
    docker-compose up
    ```
+4. Once the container is running, exec into it and run the installation:
+   ```
+   docker-compose exec openreplay bash
+   openreplay -i $DOMAIN_NAME
+   ```
 
-**Note:** This setup runs OpenReplay inside a Docker container with Kubernetes (k3s), which requires privileged access. This is experimental and may not be suitable for production. For production deployments, install OpenReplay directly on an Ubuntu host as per the official documentation.
+**Note:** This setup runs OpenReplay inside a Docker container with Kubernetes (k3s), which requires privileged access and manual installation steps. This is experimental and may not be suitable for production. For production deployments, install OpenReplay directly on an Ubuntu host as per the official documentation.
 
 The image will be published to GitHub Packages on pushes to the main branch.
 
