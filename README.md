@@ -19,3 +19,5 @@ This project is based on OpenReplay. Visit [openreplay.com](https://openreplay.c
    ```
 
 The image will be published to GitHub Packages on pushes to the main branch.
+
+Please feel free to submit a PR if you have any improvements or suggestions!
