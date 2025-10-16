@@ -3,6 +3,7 @@ version: '3.8'
 services:
   openreplay:
     build: .
+    privileged: true
     environment:
       - DOMAIN_NAME=${DOMAIN_NAME}
     ports:

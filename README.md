@@ -13,10 +13,12 @@ This project is based on OpenReplay. Visit [openreplay.com](https://openreplay.c
    ```
    DOMAIN_NAME=yourdomain.com
    ```
-3. Run with Docker Compose:
+3. Run with Docker Compose (requires privileged mode for k3s):
    ```
    docker-compose up
    ```
+
+**Note:** This setup runs OpenReplay inside a Docker container with Kubernetes (k3s), which requires privileged access. This is experimental and may not be suitable for production. For production deployments, install OpenReplay directly on an Ubuntu host as per the official documentation.
 
 The image will be published to GitHub Packages on pushes to the main branch.
 
